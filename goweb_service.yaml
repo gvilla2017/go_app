@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goweb-service
+spec:
+  selector:
+    run: goweb-app
+  ports:
+    - protocol: TCP
+      port: 9200
+      targetPort: 9200
